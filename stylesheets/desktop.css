@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 15px;
+    --ff-primary: 'Josefin Sans', sans-serif;
+    --ff-secondary: 'Alata', sans-serif;
+
+    /* colors */
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-Gray: hsl(0, 0%, 55%);
+    --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+.container {
+    width: 100%;
+}
+
+header {
+    background-image: url(../images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    padding: 3rem 3rem;
+}
+
+.nav__logo {
+    vertical-align: bottom;
+}
+
+.nav--hamburger {
+    display: none;
+}
+
+.nav--close {
+    display: none;
+}
+
+.nav__list {
+    margin-left: auto;
+    display: inline-flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.hamburger__logo {
+    display: none;
+}
+
+.nav__list li {
+    margin-left: 2rem;
+}
+
+.nav__list li a{
+    color: var(--White);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--ff-primary);
+}
+
+.header__description {
+    width: 50%;
+    margin-top: 7rem;
+    margin-left: 3rem;
+    padding: 1rem;
+    font-weight: 300;
+    font-size: 4.5rem;
+    color: var(--White);
+    font-family: var(--ff-primary);
+    text-transform: uppercase;
+    border: 1px solid var(--White);
+}
+
+.about {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 4rem;
+}
+
+.about__image picture img{
+    flex: 60%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+}
+
+.about__description__header {
+    flex: 30%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: var(--ff-primary);
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
