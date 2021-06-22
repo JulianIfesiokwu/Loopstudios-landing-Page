@@ -36,8 +36,13 @@ nav {
     padding-top: 1rem;
 }
 
+.nav__logo {
+    width: 50%;
+    height: auto;
+}
+
 .nav--hamburger {
-    vertical-align: super;
+    vertical-align: sub;
     position: absolute;
     top: 1.5rem;
     right: 1rem;
@@ -53,14 +58,28 @@ nav {
 
 .nav__list {
     display: none;
-    position: relative;
+    position: fixed;
     background-color: var(--Black);
-    height: 100vh;
-    list-style-type: none;
+    height: 100%;
     width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    list-style-type: none;
     padding-left: 1rem;
+    padding-top: 2rem;
     flex-direction: column;
     justify-content: center;
+}
+
+.hamburger__logo {
+    width: 40%;
+    height: auto;
+    vertical-align: super;
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
 }
 
 .nav__list li {
@@ -71,6 +90,7 @@ nav {
     color: var(--White);
     text-decoration: none;
     text-transform: uppercase;
+    font-size: 1.5rem;
     font-family: var(--ff-primary);
 }
 
@@ -143,6 +163,11 @@ nav {
     width: 100%;
     margin: 0 auto;
     height: auto;
+    cursor: pointer;
+}
+
+.image-container picture img:hover {
+    opacity: 0.5;
 }
 
 .image-container__description {
@@ -156,9 +181,19 @@ nav {
     color: var(--White);
 }
 
+.image-container a span {
+    display: block;
+}
+
 .cta-mobile {
     text-align: center;
     margin: 0 auto;
+    cursor: pointer;
+}
+.cta-mobile a:hover {
+    color: var(--White);
+    background-color: var(--Black);
+    border: 1px solid var(--Black);
 }
 
 .creations--cta-two {
