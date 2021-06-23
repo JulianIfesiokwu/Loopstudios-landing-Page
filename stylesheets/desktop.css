@@ -282,7 +282,27 @@ footer {
 
 .footer__media ul li{
     display: inline-block;
-    margin-left: 2rem;    
+    margin-left: 2rem;
+    cursor: pointer;
+    transition-duration: 500ms;
+    transition-property: border-bottom;    
+}
+
+.footer__media ul li a::before{
+    content: '';
+    width: 35%;
+    height: 10px;
+    background-color: var(--White);
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+.footer__media ul li:hover::before {
+    left: 0%;
+    width: 100%;
 }
 
 .footer__copyright {
